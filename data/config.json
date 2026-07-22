@@ -1,0 +1,9 @@
+{
+  "_comment": "Repos listed here appear first, in this order. Rename to match your actual repo names. Any empty slots are filled with your most recently pushed repos.",
+  "services": [
+    "tileshop",
+    "audit-5s",
+    "timetable-automation"
+  ],
+  "max_services": 4
+}

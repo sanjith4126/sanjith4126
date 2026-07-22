@@ -1,0 +1,48 @@
+name: build-profile
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"      # every 6 hours, UTC
+  workflow_dispatch:            # lets you trigger it by hand from the Actions tab
+  push:
+    branches: [main]
+    paths:
+      - "README.template.md"
+      - "scripts/**"
+      - "data/**"
+      - ".github/workflows/build-profile.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-profile
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Render status board and README
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PROFILE_USER: ${{ github.repository_owner }}
+        run: python3 scripts/build_profile.py
+
+      - name: Commit if anything changed
+        run: |
+          git config user.name  "profile-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md assets/status.svg data/
+          if git diff --staged --quiet; then
+            echo "no changes"
+          else
+            git commit -m "build: refresh status board [skip ci]"
+            git push
+          fi
