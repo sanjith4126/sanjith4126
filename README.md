@@ -31,9 +31,9 @@
 ### Currently shipping
 
 <!--BUILD:NOW-->
-- **TileShop** — no description set `py` · last push 1d ago
-- **sanjith4126** — no description set `py` · last push 6h ago
-- **Continuum** — no description set `ts` · last push 22d ago
+- **TileShop** — no description set `py` · last push 2d ago
+- **CRM-SUWASTHIK** — no description set `ts` · last push 3h ago
+- **sanjith4126** — no description set `py` · last push 8h ago
 <!--/BUILD:NOW-->
 
 ---
@@ -125,6 +125,6 @@ _No entries yet. Open an issue titled `/sign <your message>` to leave one._
 
 <p align="center">
   <!--BUILD:STAMP-->
-<sub><code>last build: 07 Oct 2026, 10:06 IST &middot; run #296 &middot; 913ms</code></sub>
+<sub><code>last build: 07 Oct 2026, 18:15 IST &middot; run #297 &middot; 698ms</code></sub>
 <!--/BUILD:STAMP-->
 </p>
