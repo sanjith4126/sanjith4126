@@ -31,9 +31,9 @@
 ### Currently shipping
 
 <!--BUILD:NOW-->
-- **TileShop** — no description set `py` · last push 23d ago
-- **sanjith4126** — no description set `py` · last push 6h ago
-- **CRM-SUWASTHIK** — no description set `ts` · last push 21d ago
+- **TileShop** — no description set `py` · last push 24d ago
+- **AI-COMPANION** — 🎙️ MindCompanion: an AI voice companion for mental health. Talk out loud and it listens, picks up your emotion, remembers past chats and answers in a natural voice. Built with React, Django, Supabase (pgvector), Gemini, ElevenLabs and HuggingFace. `py` · last push 6h ago
+- **Tileshop-3D-industry-analyzer** — no description set `c#` · last push 6h ago
 <!--/BUILD:NOW-->
 
 ---
@@ -125,6 +125,6 @@ _No entries yet. Open an issue titled `/sign <your message>` to leave one._
 
 <p align="center">
   <!--BUILD:STAMP-->
-<sub><code>last build: 29 Oct 2026, 10:08 IST &middot; run #374 &middot; 1208ms</code></sub>
+<sub><code>last build: 29 Oct 2026, 17:53 IST &middot; run #375 &middot; 963ms</code></sub>
 <!--/BUILD:STAMP-->
 </p>
